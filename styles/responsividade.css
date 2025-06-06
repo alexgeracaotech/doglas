@@ -3,16 +3,73 @@
     display: flex;
   }
 
-  .apresentacao, .arvore {
+  .apresentacao,
+  .arvore {
     width: 50%;
     height: 100%;
+    justify-content: center;
   }
 
   .apresentacao p {
     font-size: .9rem;
   }
+}
+
+@media (min-width: 480px) {
+  .apresentacao div {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .apresentacao h1 {
+    font-size: 2.6rem;
+  }
+
+  .apresentacao p {
+    font-size: 1.3rem;
+  }
+
+  .arvore .botao {
+    width: 22.5rem;
+    height: 7.5rem;
+    font-size: 4rem;
+  }
+
+  .arvore ul {
+    gap: 2rem;
+  }
+
+  .arvore ul li {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .apresentacao div {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .apresentacao h1 {
+    font-size: 4rem;
+  }
+
+  .apresentacao p {
+    font-size: 2.2rem;
+  }
 
   .arvore {
-    justify-content: center;
+    gap: 2rem;
+  }
+
+  .arvore .botao {
+    width: 35rem;
+    height: 10rem;
+    font-size: 6rem;
+  }
+
+  .arvore ul .visibilidade {
+    display: block;
   }
 }
